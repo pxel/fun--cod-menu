@@ -1,0 +1,36 @@
+body, html {
+    height: 100%;
+    position: relative;
+    font-size: 1vw;
+    font-family: $ff;
+    font-weight: 300;
+}
+.wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url(../images/bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(#666666, 0.85);
+    }
+    .container {
+        width: $container-w;
+        position: relative;
+        margin: 0 auto;
+        height: 100%;
+        .column {
+            width: $column-w;
+            height: 100%;
+        }
+    }
+}
